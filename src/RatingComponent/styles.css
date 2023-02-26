@@ -1,0 +1,85 @@
+:root {
+    --primary: rgb(251, 119, 24);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%); 
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+.rating-card{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Overpass', sans-serif;
+    color: var(--White);
+    background-color: var(--DarkBlue);
+    box-shadow: 0px 0px 2px var(--DarkBlue);
+    width: 350px;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: start;
+}
+
+.star-icon-circle{
+    align-self: flex-start;
+    background-color: hsl(214, 13%, 21%) ;
+    border-radius: 50%;
+    height: auto;
+    width: auto;
+    display: inline-flex;
+    padding: 15px;
+}
+.rating-card h3{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.rating-card p{
+    font-weight: 400;
+    color: var(--LightGrey);
+}
+
+.rate-buittons-holder{
+    display: flex;
+    justify-content: center;
+}
+
+.number-circle{
+    align-self: flex-start;
+    background-color: hsl(214, 13%, 21%) ;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    display: inline-flex;
+    justify-content: center;
+    margin: 15px 15px 15px 0px;
+    padding: 20px;
+}
+
+.selected-circle{
+    background-color: var(--MediumGrey) ;
+}
+
+.rating-card-submit-button{
+    align-self: center;
+    background-color: var(--primary);
+    border: none;
+    font-size: 20px;
+    color: var(--White);
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    padding: 10px;
+    margin: 15px 0px ;
+    border-radius: 20px;
+}
+
+.number-circle:hover{
+    background-color: var(--primary);
+    color: var(--White);
+}
+
+.rating-card-submit-button:hover{
+    background-color: var(--White);
+    color: var(--primary);
+}
